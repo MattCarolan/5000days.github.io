@@ -1305,3 +1305,33 @@ h2 {
 .teaser-music { background: linear-gradient(135deg, rgba(228,173,67,.06), transparent); }
 .teaser-music .teaser-icon, .teaser-music .teaser-label { color: var(--gold-soft); }
 @media (max-width: 720px) { .teaser-grid { grid-template-columns: 1fr; gap: 14px; } .teaser-card { padding: 20px; gap: 14px; } }
+
+/* Official store artwork stays unmodified; URLs are configured in app-links.js. */
+.app-store-actions { display: flex; flex-wrap: wrap; align-items: flex-start; column-gap: 12px; row-gap: 8px; }
+.hero-app-actions { margin-top: 18px; }
+.app-download-label { flex-basis: 100%; color: var(--muted-strong); font-size: .8rem; font-weight: 700; }
+.app-store-badge { display: inline-flex; flex: 0 0 auto; flex-direction: column; align-items: center; color: var(--muted-strong); text-decoration: none; border-radius: 6px; }
+.app-store-badge:focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 3px; }
+.store-badge-art { display: flex; align-items: center; justify-content: center; height: 72px; }
+.store-badge-image { display: block; max-width: none; object-fit: contain; }
+.store-badge-ios { width: auto; height: 48px; margin-inline: 12px; }
+/* Google includes its own clear space in the original 646 x 250 artwork. */
+.store-badge-android { width: auto; height: 72px; }
+.app-companion { scroll-margin-top: 110px; }
+.app-companion-copy { min-width: 0; }
+.app-companion .app-description { margin: 0 0 16px; color: var(--muted-strong); font-size: .9rem; line-height: 1.75; }
+.app-companion p.app-store-status { margin: 16px 0 0; color: var(--muted); font-size: .76rem; line-height: 1.5; }
+@media (max-width: 900px) { .hero-app-actions { justify-content: center; } }
+@media (max-width: 520px) {
+ .app-store-actions { column-gap: 8px; }
+ .store-badge-art { height: 60px; }
+ .store-badge-ios { height: 40px; margin-inline: 10px; }
+ .store-badge-android { height: 60px; }
+ .app-companion { flex-direction: column; }
+ .app-companion .app-store-actions { width: 100%; }
+}
+
+.app-store-actions { align-items: center; }
+.android-soon, .app-qr { color: var(--muted-strong); font-size: .85rem; }
+.app-qr { display: flex; align-items: center; gap: 14px; margin-top: 12px; }
+.app-qr img { flex: none; }
