@@ -1335,3 +1335,5 @@ h2 {
 .android-soon, .app-qr { color: var(--muted-strong); font-size: .85rem; }
 .app-qr { display: flex; align-items: center; gap: 14px; margin-top: 12px; }
 .app-qr img { flex: none; }
+
+.adapt-tagline { font-style: italic; font-weight: 400; }
