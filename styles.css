@@ -1490,3 +1490,8 @@ h2 {
 .about-copy a:not(.button) { color:var(--gold-soft); text-underline-offset:4px; }
 @media(max-width:1000px){.infographic-grid {grid-template-columns:repeat(4,minmax(0,1fr));}}
 @media(max-width:650px){.infographic-grid {grid-template-columns:repeat(2,minmax(0,1fr));}.reader-reviews {grid-template-columns:1fr;}}
+
+.author-quote { margin:0; }
+.author-quote blockquote { margin:0; }
+.author-quote h2 { font-style:italic; }
+.author-quote figcaption { margin-top:20px; color:var(--gold); font-weight:650; letter-spacing:.04em; }
