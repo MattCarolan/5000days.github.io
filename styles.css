@@ -1411,3 +1411,20 @@ h2 {
 .threshold h1,.threshold-line strong,.site-header .wordmark span { background-size:100% 100%,34px 22px; }
 .threshold-art { mask-image:linear-gradient(to right,transparent,#000 13%); }
 @media(max-width:680px) { .threshold-art { mask-image:linear-gradient(to bottom,transparent,#000 8%); } }
+
+/* Let the original jacket lettering carry the foil detail at every size. */
+.threshold h1 { background:none; filter:none; margin:24px 0 6px; }
+.threshold h1 img { display:block; width:min(100%,410px); height:auto; }
+.threshold-line { font-size:clamp(2rem,3.35vw,3.65rem); }
+.threshold-inner { padding-block:clamp(44px,4.8vw,84px); }
+.threshold .rank { margin-top:22px; }
+@media(min-width:681px) {
+  .threshold-art { inset:0; width:100%; mask-image:none; }
+  .threshold-art img { object-fit:cover; object-position:72% center; }
+  .threshold::before { background:linear-gradient(90deg,#051018ca 0%,#05101899 25%,transparent 55%); }
+  .threshold-inner { min-height:clamp(565px,43vw,760px); }
+}
+@media(max-width:680px) {
+  .threshold h1 img { width:min(90%,355px); }
+  .threshold-inner { padding-block:32px calc(70.8vw + 20px); }
+}
