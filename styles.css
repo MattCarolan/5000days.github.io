@@ -1432,8 +1432,8 @@ h2 {
 .site-header .wordmark { align-items:center; flex:none; }
 .site-header .wordmark img { display:block; width:clamp(125px,14vw,180px); height:auto; }
 .threshold h1 { line-height:normal; margin:22px 0 3px; }
-.threshold h1 img { width:min(100%,560px); }
-.threshold-author { width:min(100%,560px); text-align:center; margin-top:10px; }
+.threshold h1 img { width:min(100%,445px); }
+.threshold-author { width:min(100%,445px); text-align:center; margin-top:10px; }
 @media(max-width:680px){
   .threshold h1 img { width:100%; }
   .threshold-author { width:100%; font-size:.85rem; }
