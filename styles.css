@@ -1494,4 +1494,4 @@ h2 {
 .author-quote { margin:0; }
 .author-quote blockquote { margin:0; }
 .author-quote h2 { font-style:italic; }
-.author-quote figcaption { margin-top:20px; color:var(--gold); font-weight:650; letter-spacing:.04em; }
+.author-quote figcaption { margin-top:12px; color:var(--gold); font-size:1rem; font-style:normal; font-weight:500; letter-spacing:.02em; text-align:right; }
