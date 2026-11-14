@@ -12,6 +12,8 @@
     6: 8,
   });
 
+  const chapterNames = {1:"History",2:"Security",3:"Economics",4:"Artificial Intelligence Will Fail",5:"Which Cloud is Better",6:"The Future"};
+
   const tabs = document.querySelector("#chapter-tabs");
   const grid = document.querySelector("#infographic-grid");
   const chapterTitle = document.querySelector("#active-chapter-title");
@@ -100,7 +102,7 @@
     const count = chapterCounts[activeChapter];
     const fragment = document.createDocumentFragment();
 
-    chapterTitle.textContent = `Chapter ${activeChapter}`;
+    chapterTitle.textContent = `Chapter ${activeChapter}: ${chapterNames[activeChapter]}`;
     chapterCount.textContent = `${count} infographics`;
     grid.setAttribute("aria-labelledby", `chapter-tab-${activeChapter}`);
 
