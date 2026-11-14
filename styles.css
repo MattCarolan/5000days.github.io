@@ -1479,7 +1479,8 @@ h2 {
 .reader-reviews { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-bottom:32px; }
 .reader-reviews figure { margin:0; padding:26px; border:1px solid var(--line); border-radius:16px; background:var(--panel-solid); }
 .review-stars { color:var(--gold-soft); letter-spacing:.12em; }
-.reader-reviews blockquote { margin:14px 0; line-height:1.75; color:var(--muted-strong); }
+.reader-reviews blockquote { margin:14px 0; line-height:1.75; color:var(--muted-strong); font-style:italic; }
+.reader-reviews .review-quote-mark { color:var(--gold); font-family:Georgia,serif; font-size:1.8em; font-weight:700; line-height:0; vertical-align:-.16em; padding:0 .08em; }
 .reader-reviews figcaption { font-weight:700; }
 .about-copy a:not(.button) { color:var(--gold-soft); text-underline-offset:4px; }
 @media(max-width:1000px){.infographic-grid {grid-template-columns:repeat(4,minmax(0,1fr));}}
