@@ -1415,7 +1415,7 @@ h2 {
 /* Let the original jacket lettering carry the foil detail at every size. */
 .threshold h1 { background:none; filter:none; margin:24px 0 6px; }
 .threshold h1 img { display:block; width:min(100%,410px); height:auto; }
-.threshold-line { font-size:clamp(2rem,3.35vw,3.65rem); }
+.threshold-line { font-size:clamp(1.7rem,2.8475vw,3.1025rem); }
 .threshold-inner { padding-block:clamp(44px,4.8vw,84px); }
 .threshold .rank { margin-top:22px; }
 @media(min-width:681px) {
@@ -1432,8 +1432,8 @@ h2 {
 .site-header .wordmark { align-items:center; flex:none; }
 .site-header .wordmark img { display:block; width:clamp(125px,14vw,180px); height:auto; }
 .threshold h1 { line-height:normal; margin:22px 0 3px; }
-.threshold h1 img { width:min(100%,445px); }
-.threshold-author { width:min(100%,445px); text-align:center; margin-top:10px; }
+.threshold h1 img { width:min(100%,511.75px); }
+.threshold-author { width:min(100%,511.75px); text-align:center; margin-top:10px; }
 @media(max-width:680px){
   .threshold h1 img { width:100%; }
   .threshold-author { width:100%; font-size:.85rem; }
