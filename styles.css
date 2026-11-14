@@ -1428,3 +1428,9 @@ h2 {
   .threshold h1 img { width:min(90%,355px); }
   .threshold-inner { padding-block:32px calc(70.8vw + 20px); }
 }
+
+.site-header .wordmark { align-items:center; flex:none; }
+.site-header .wordmark img { display:block; width:clamp(125px,14vw,180px); height:auto; }
+.threshold h1 { line-height:normal; margin:22px 0 3px; }
+.threshold h1 img { width:min(100%,445px); }
+@media(max-width:680px){ .threshold h1 img { width:min(94%,375px); } }
