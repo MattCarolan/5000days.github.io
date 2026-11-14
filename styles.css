@@ -1385,3 +1385,29 @@ h2 {
 @media(max-width:680px){.threshold-art{top:auto;height:260px}.threshold-art img{object-position:right}.threshold::before{background:linear-gradient(180deg,#050d14 0%,#050d14 55%,transparent 80%)}.threshold-inner{padding-block:32px 225px}.threshold-deck{max-width:100%}.threshold .hero-actions{justify-content:flex-start}.feature-shelf{width:calc(100% - 24px);gap:12px}.speaker-strip .shell{display:grid;gap:10px}.speaker-strip .shell>p{border:0;padding:0}.speaker-strip .button{justify-self:start}.feature-copy{width:67%}.device{right:2%}.feature .feature-label{font-size:.7rem}}
 
 .about-copy { min-width: 0; } .about-copy .hero-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin:0 0 22px; } .about-copy .hero-facts div { min-width:0; padding-inline:8px; }
+
+/* Use the printed jacket panels intact; keep their captions inside the frame. */
+.threshold { background:#050c12; }
+.threshold-art { left:auto; width:60%; }
+.threshold-art img { object-fit:contain; object-position:right bottom; }
+.threshold::before { background:linear-gradient(90deg,#050c12 35%,transparent 56%); }
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+  .threshold h1, .threshold-line strong, .site-header .wordmark span {
+    background-color:#edba5e;
+    background-image:linear-gradient(165deg,rgba(255,242,198,.68),transparent 36%,rgba(134,76,13,.28) 57%,rgba(255,234,168,.42) 74%,rgba(106,59,8,.36)),url("assets/cover-foil.webp");
+    background-size:100% 100%,80px 30px;
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    filter:drop-shadow(0 1px 0 #8e591c);
+  }
+}
+@media (max-width:680px) {
+  .threshold-art { inset:auto 0 0; width:100%; height:auto; aspect-ratio:1024/725; }
+  .threshold-inner { padding-bottom:calc(70.8vw + 14px); }
+  .threshold::before { background:none; }
+}
+@media (forced-colors:active) {
+  .threshold h1,.threshold-line strong,.site-header .wordmark span { color:CanvasText; background:none; filter:none; }
+}
+.threshold h1,.threshold-line strong,.site-header .wordmark span { background-size:100% 100%,34px 22px; }
+.threshold-art { mask-image:linear-gradient(to right,transparent,#000 13%); }
+@media(max-width:680px) { .threshold-art { mask-image:linear-gradient(to bottom,transparent,#000 8%); } }
