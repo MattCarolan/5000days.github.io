@@ -93,22 +93,14 @@ a:focus-visible {
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
-  gap: 9px;
-  color: var(--text);
+  align-items: center;
+  flex: none;
   text-decoration: none;
-  letter-spacing: -0.035em;
 }
-.brand-mark {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-}
-.brand-word {
-  color: var(--blue-bright);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.24em;
+.brand img {
+  display: block;
+  width: clamp(125px, 14vw, 180px);
+  height: auto;
 }
 .header-meta {
   display: flex;
