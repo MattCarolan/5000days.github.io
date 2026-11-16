@@ -107,7 +107,6 @@
     grid.setAttribute("aria-labelledby", `chapter-tab-${activeChapter}`);
 
     for (let item = 1; item <= count; item += 1) {
-      const path = infographicPath(activeChapter, item);
       const label = labelFor(activeChapter, item);
       const card = document.createElement("article");
       const button = document.createElement("button");
@@ -126,9 +125,11 @@
       index.className = "infographic-index";
       index.textContent = `${activeChapter}.${item}`;
       index.setAttribute("aria-hidden", "true");
-      image.src = path;
+      image.srcset = `assets/infographic-previews/infographic-${activeChapter}.${item}-480.webp 480w, assets/infographic-previews/infographic-${activeChapter}.${item}-960.webp 960w`;
+      image.sizes = "(max-width: 650px) calc((100vw - 44px) / 2), (max-width: 720px) calc((100vw - 72px) / 4), (max-width: 1000px) calc((100vw - 82px) / 4), calc((min(100vw - 40px, 1180px) - 70px) / 6)";
+      image.src = `assets/infographic-previews/infographic-${activeChapter}.${item}-480.webp`;
       image.alt = `${label} from 5,000 Days`;
-      image.loading = item <= 3 ? "eager" : "lazy";
+      image.loading = "lazy";
       image.decoding = "async";
       caption.className = "infographic-caption";
       captionTitle.textContent = label;
